@@ -1,40 +1,46 @@
 import React from 'react';
 import IconLink from "./IconLink";
-import {Box} from "@mui/material";
+import { Box } from "@mui/material";
 
 function PortfolioBlock(props) {
-   const {image, live, source, title, source_ui, source_api} = props;
-   console.log("spurce", source_ui)
-   console.log("spurce", title)
+  const { image, live, source, title, source_ui, source_api, yt_vid } = props;
+  console.log("spurce", source_ui);
+  console.log("spurce", title);
 
-   return (
-      <Box
+  return (
+    <Box
       display={'flex'}
       flexDirection={'column'}
       justifyContent={'center'}
       alignItems={'center'}
-      // style={{
-      //    boxShadow: '0px 10px 30px rgba(0, 0, 0, 0.5)', // Shadow effect for 3D look
-      //    transform: 'scale(1.05)', // Slightly increase the size for a 3D effect
-      //    background: 'linear-gradient(135deg, #ffffff, #e0e0e0)', // Subtle background gradient
-      //    padding: '2rem', // Add padding inside the container
-      //    borderRadius: '15px', // Slightly round the corners
-      //    height: "500px",
-      //    width: "500px"
-      //  }}
-      
     >
-      <Box
-        component={'img'}
-        src={image}
-        alt={'mockup'}
-        style={{
-          width: "470px", // Reduced width for better containment
-          height: "250px", // Reduced height for better containment
-         //  border: "10px solid black", // Solid border around the image
-          borderRadius: "10px" // Rounded corners for the image
-        }}
-      />
+      {yt_vid ? (
+        <iframe 
+        width="560" 
+        height="315" 
+        src={`https://www.youtube.com/embed/Ra9OVulZQms?start=1}`}
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; 
+        autoplay; 
+        clipboard-write; 
+        encrypted-media; 
+        gyroscope; 
+        picture-in-picture; 
+        web-share" allowfullscreen></iframe>
+      
+      ) : (
+        <Box
+          component={'img'}
+          src={image}
+          alt={'mockup'}
+          style={{
+            width: "470px",
+            height: "250px",
+            borderRadius: "10px",
+          }}
+        />
+      )}
       <h1 style={{ fontSize: '2rem' }}>{title}</h1>
       <Box
         className={'portfolio'}
@@ -48,7 +54,6 @@ function PortfolioBlock(props) {
         <Box p={1} border={'2px solid black'} borderRadius={'25px'} bgcolor={!live ? "#D2D7D3" : ""}>
           <IconLink link={live} title={'Live Demo'} icon={'fa fa-safari'} />
         </Box>
-    
         <Box display="flex" gap="10px">
           {source_ui && (
             <Box
@@ -74,8 +79,7 @@ function PortfolioBlock(props) {
         )}
       </Box>
     </Box>
-    
-   );
+  );
 }
 
 export default PortfolioBlock;

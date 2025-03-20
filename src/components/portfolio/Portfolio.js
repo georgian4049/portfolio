@@ -10,7 +10,7 @@ export default function Portfolio({innerRef}) {
       
                 {info.portfolio.map((project, index) => (
                    <Grid item xs={12} md={6} key={index}>
-                       <PortfolioBlock image={project.image} live={project.live} source_ui={project.source_ui} source_api={project.source_api} source={project.source}  title={project.title} />
+                       <PortfolioBlock image={project.image} live={project.live} source_ui={project.source_ui} source_api={project.source_api} source={project.source}  title={project.title} yt_vid={project.yt_vid}/>
                    </Grid>
                 ))}
             </Grid>

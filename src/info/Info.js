@@ -120,6 +120,12 @@ export const info = {
     ],
     portfolio: [ // This is where your portfolio projects will be detailed
         {
+            title: "Literature review",
+            live: "https://youtu.be/Ra9OVulZQms", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            source_ui: "https://github.com/georgian4049/LLM/tree/main/multi_agent_systems/literature_review", // this should be a link to the **repository** of the project, where the code is hosted.
+            yt_vid: true
+        },
+        {
             title: "Document Data extractor",
             live: "https://ui-doc-ext.onrender.com", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
             source_ui: "https://github.com/georgian4049/ui_doc_ext",
