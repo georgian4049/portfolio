@@ -16,8 +16,8 @@ function PortfolioBlock(props) {
     >
       {yt_vid ? (
         <iframe 
-        width="560" 
-        height="315" 
+        width="470px" 
+        height="250px" 
         src={`https://www.youtube.com/embed/Ra9OVulZQms?start=1}`}
         title="YouTube video player" 
         frameborder="0" 
