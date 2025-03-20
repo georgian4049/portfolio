@@ -90,7 +90,7 @@ export const info = {
     bio: "Hello! I'm Ayush, currently pursuing Masters in Informatik (Computer Science) at RPTU Kaiserslautern-Landau. Apart from studies and technology, I love sports (Tennis, Fencing, Inline skating etc), hiking and travelling!",
      skills:
         {
-            proficientWith: ['Python', 'MySql', 'Javascript/Typescript', 'React', 'FastAPI','git', 'Pytorch', 'GenAI', 'LLM', 'VAE', 'Transformers', 'CNN'],
+            proficientWith: ['Python', 'MySql', 'Javascript/Typescript', 'React', 'FastAPI','git', 'Pytorch', 'GenAI', 'LLM', 'Multi Agent Systems', 'Transformers', 'CNN'],
             exposedTo: ['Jenkins', 'Docker', 'MongoDB']
         }
     ,
