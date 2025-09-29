@@ -44,7 +44,7 @@ export const info = {
         },
         {
             emoji: "💼",
-            text: "AI/Software Dev @ BASF"
+            text: "AI Research Intern- Biomedical AI at NECLABS Europe"
         },
         {
             emoji: "📧",
